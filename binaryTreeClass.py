@@ -34,9 +34,9 @@ class Node:
 
 	def search(self, needle, parent=None):
 		"""
-        Searches for a node and returns it if found,
-        along with it's parent
-        """
+		Searches for a node and returns it if found,
+		along with it's parent
+		"""
 		if needle < self.root:
 			if self.left is None:
 				return None, None
@@ -50,8 +50,8 @@ class Node:
 
 	def lookupDepth(self, depth=1):
 		"""
-        Recursive function to get the depth of tree
-        """
+		Recursive function to get the depth of tree
+		"""
 		if self.left is None:
 			return depth
 		else:
@@ -64,8 +64,8 @@ class Node:
 
 	def viewNodes(self):
 		"""
-        Generator to get the nodes data
-        """
+		Generator to get the nodes data
+		"""
 		stack = []
 		node = self
 
